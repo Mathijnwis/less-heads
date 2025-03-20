@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset />
+  <library_images>
+    <image id="MiiFace">
+      <init_from>MiiFace.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="mt_faceline">
+      <instance_effect url="#Effect_mt_faceline" />
+    </material>
+    <material id="mt_hair">
+      <instance_effect url="#Effect_mt_hair" />
+    </material>
+    <material id="mt_mask">
+      <instance_effect url="#Effect_mt_mask" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Effect_mt_faceline">
+      <profile_COMMON>
+        <newparam sid="surface_mt_faceline-diffuse">
+          <surface type="2D">
+            <init_from>MiiFace</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler_mt_faceline-diffuse">
+          <sampler2D>
+            <source>surface_mt_faceline-diffuse</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="sampler_mt_faceline-diffuse" texcoord="CHANNEL0" />
+            </diffuse>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Effect_mt_hair">
+      <profile_COMMON>
+        <newparam sid="surface_mt_hair-diffuse">
+          <surface type="2D">
+            <init_from>MiiFace</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler_mt_hair-diffuse">
+          <sampler2D>
+            <source>surface_mt_hair-diffuse</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="sampler_mt_hair-diffuse" texcoord="CHANNEL0" />
+            </diffuse>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Effect_mt_mask">
+      <profile_COMMON>
+        <newparam sid="surface_mt_mask-diffuse">
+          <surface type="2D">
+            <init_from>MiiFace</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler_mt_mask-diffuse">
+          <sampler2D>
+            <source>surface_mt_mask-diffuse</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="sampler_mt_mask-diffuse" texcoord="CHANNEL0" />
+            </diffuse>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Root__mt_faceline-mesh" name="Root__mt_faceline">
+      <mesh>
+        <source id="Root__mt_faceline-position">
+          <float_array id="Root__mt_faceline-position-array" count="279">1.371094 0.3903809 0.1065063 0.5410156 0.3903809 0.8989258 0.0001081824 0 -0.4995117 0.0002741814 0 -0.4997559 -0.0001211762 0 -0.4995117 0 0 -0.5 0.5410156 0.3903809 0.8989258 -0.0002794266 0 -0.4997559 -0.6064453 0.3903809 0.871582 -0.6064453 0.3903809 0.871582 -0.0002739429 0 -0.5 -1.398438 0.3903809 0.04129028 -1.398438 0.3903809 0.04129028 -0.0001081824 0 -0.5 -1.371094 0.3903809 -1.106445 -1.371094 0.3903809 -1.106445 0.000121057 0 -0.5 -0.5410156 0.3903809 -1.898438 -0.5410156 0.3903809 -1.898438 0.0002794266 0 -0.5 0.6064453 0.3903809 -1.871094 0.6064453 0.3903809 -1.871094 1.398438 0.3903809 -1.041016 1.398438 0.3903809 -1.041016 1.371094 0.3903809 0.1065063 1.371094 0.3903809 0.1065063 2.375 1.456055 0.550293 0.5410156 0.3903809 0.8989258 2.742188 2.912109 0.7128906 0.9370117 1.456055 1.922852 1.082031 4.371094 2.296875 1.082031 2.912109 2.296875 2.742188 4.371094 0.7128906 2.796875 2.912109 -1.582031 2.375 1.456055 0.550293 -1.212891 4.371094 2.242188 -1.212891 2.912109 2.242188 -1.049805 1.456055 1.875977 0.9370117 1.456055 1.922852 2.796875 4.371094 -1.582031 2.421875 1.456055 -1.436523 1.371094 0.3903809 0.1065063 -2.796875 4.371094 0.5820313 -2.796875 2.912109 0.5820313 -2.421875 1.456055 0.4372559 -1.049805 1.456055 1.875977 -0.6064453 0.3903809 0.871582 0.5410156 0.3903809 0.8989258 1.398438 0.3903809 -1.041016 -2.742188 4.371094 -1.712891 -2.742188 2.912109 -1.712891 -2.375 1.456055 -1.549805 -2.421875 1.456055 0.4372559 -1.398438 0.3903809 0.04129028 -0.6064453 0.3903809 0.871582 -1.082031 4.371094 -3.296875 -1.082031 2.912109 -3.296875 -0.9370117 1.456055 -2.921875 -2.375 1.456055 -1.549805 -1.371094 0.3903809 -1.106445 -1.398438 0.3903809 0.04129028 1.212891 4.371094 -3.242188 1.212891 2.912109 -3.242188 1.049805 1.456055 -2.875 -0.9370117 1.456055 -2.921875 -0.5410156 0.3903809 -1.898438 -1.371094 0.3903809 -1.106445 2.796875 4.371094 -1.582031 2.796875 2.912109 -1.582031 2.421875 1.456055 -1.436523 1.049805 1.456055 -2.875 0.6064453 0.3903809 -1.871094 -0.5410156 0.3903809 -1.898438 1.398438 0.3903809 -1.041016 0.6064453 0.3903809 -1.871094 -0.375 4.679688 2 -0.375 2.25 2 -0.375 2.25 3 0.375 4.679688 2 0.375 2.25 3 0.375 2.25 2 0.375 2.25 3 -0.375 2.25 3 0.375 2.25 2 -0.375 2.25 2 0.375 2.25 2 -0.375 2.25 2 0.375 4.679688 2 -0.375 4.679688 2 -0.375 4.679688 2 -0.375 2.25 3 0.375 4.679688 2 0.375 2.25 3</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_faceline-position-array" count="93" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_faceline-normal">
+          <float_array id="Root__mt_faceline-normal-array" count="279">0.444227 -0.8727984 0.1976517 0.1761252 -0.8727984 0.4540117 0.04500978 -0.9921722 0.1174168 0.1154599 -0.9921722 0.05088063 -0.05088063 -0.9921722 0.1154599 0 -1 0 0.1761252 -0.8727984 0.4540117 -0.1174168 -0.9921722 0.04500978 -0.1976517 -0.8727984 0.444227 -0.1976517 -0.8727984 0.444227 -0.1154599 -0.9921722 -0.05088063 -0.4540117 -0.8727984 0.1761252 -0.4540117 -0.8727984 0.1761252 -0.04500978 -0.9921722 -0.1174168 -0.444227 -0.8727984 -0.1976517 -0.444227 -0.8727984 -0.1976517 0.05088063 -0.9921722 -0.1154599 -0.1761252 -0.8727984 -0.4540117 -0.1761252 -0.8727984 -0.4540117 0.1174168 -0.9921722 -0.04500978 0.1976517 -0.8727984 -0.444227 0.1976517 -0.8727984 -0.444227 0.4540117 -0.8727984 -0.1761252 0.4540117 -0.8727984 -0.1761252 0.444227 -0.8727984 0.1976517 0.444227 -0.8727984 0.1976517 0.7847358 -0.5127202 0.3463796 0.1761252 -0.8727984 0.4540117 0.9060665 -0.1350294 0.4011742 0.3091977 -0.5127202 0.8003914 0.3581213 0.1350294 0.9236791 0.3581213 -0.1350294 0.9236791 0.9060665 0.1350294 0.4011742 0.9236791 -0.1350294 -0.3581213 0.7847358 -0.5127202 0.3463796 -0.4011742 0.1350294 0.9060665 -0.4011742 -0.1350294 0.9060665 -0.3463796 -0.5127202 0.7847358 0.3091977 -0.5127202 0.8003914 0.9236791 0.1350294 -0.3581213 0.8003914 -0.5127202 -0.3091977 0.444227 -0.8727984 0.1976517 -0.9236791 0.1350294 0.3581213 -0.9236791 -0.1350294 0.3581213 -0.8003914 -0.5127202 0.3091977 -0.3463796 -0.5127202 0.7847358 -0.1976517 -0.8727984 0.444227 0.1761252 -0.8727984 0.4540117 0.4540117 -0.8727984 -0.1761252 -0.9060665 0.1350294 -0.4011742 -0.9060665 -0.1350294 -0.4011742 -0.7847358 -0.5127202 -0.3463796 -0.8003914 -0.5127202 0.3091977 -0.4540117 -0.8727984 0.1761252 -0.1976517 -0.8727984 0.444227 -0.3581213 0.1350294 -0.9236791 -0.3581213 -0.1350294 -0.9236791 -0.3091977 -0.5127202 -0.8003914 -0.7847358 -0.5127202 -0.3463796 -0.444227 -0.8727984 -0.1976517 -0.4540117 -0.8727984 0.1761252 0.4011742 0.1350294 -0.9060665 0.4011742 -0.1350294 -0.9060665 0.3463796 -0.5127202 -0.7847358 -0.3091977 -0.5127202 -0.8003914 -0.1761252 -0.8727984 -0.4540117 -0.444227 -0.8727984 -0.1976517 0.9236791 0.1350294 -0.3581213 0.9236791 -0.1350294 -0.3581213 0.8003914 -0.5127202 -0.3091977 0.3463796 -0.5127202 -0.7847358 0.1976517 -0.8727984 -0.444227 -0.1761252 -0.8727984 -0.4540117 0.4540117 -0.8727984 -0.1761252 0.1976517 -0.8727984 -0.444227 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0.3796478 0.925636 0 0.3796478 0.925636 0 0.3796478 0.925636 0 0.3796478 0.925636</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_faceline-normal-array" count="93" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_faceline-texcoord">
+          <float_array id="Root__mt_faceline-texcoord-array" count="186">0.5883574 0.1578393 0.5642633 0.2148623 0.5000076 0.1500114 0.5000229 0.1499962 0.5000076 0.1500114 0.5000076 0.1499962 0.5594873 0.2190738 0.4999924 0.1500114 0.4957656 0.2419623 0.5021134 0.242359 0.4999771 0.1499962 0.4345312 0.2130923 0.4387274 0.2178531 0.4999924 0.1499962 0.4116426 0.1493706 0.4112307 0.1557031 0.5000076 0.1499809 0.4405127 0.08813614 0.4357366 0.0923171 0.5000076 0.1499962 0.5021134 0.06482035 0.4978866 0.06482035 0.5612726 0.08932632 0.5654688 0.09411764 0.5887694 0.1514611 0.5781949 0.3125048 0.5916533 0.3799191 0.5677271 0.3125048 0.5937438 0.4735942 0.5635462 0.3745327 0.5624933 0.5541924 0.5624933 0.4735942 0.5937438 0.5541924 0.6249943 0.4735942 0.5947967 0.3745327 0.5312428 0.5541924 0.5312428 0.4735942 0.5322957 0.3745327 0.5604028 0.3799191 0.6249943 0.5541924 0.6229038 0.3799191 0.5989776 0.3125048 0.5000076 0.5541924 0.5000076 0.4735942 0.5010452 0.3745327 0.5291523 0.3799191 0.5364767 0.3125048 0.5469444 0.3125048 0.6094453 0.3125048 0.4687572 0.5541924 0.4687572 0.4735942 0.4697948 0.3745327 0.4979019 0.3799191 0.5052262 0.3125048 0.5156939 0.3125048 0.4375067 0.5541924 0.4375067 0.4735942 0.4385443 0.3745327 0.4666514 0.3799191 0.4739757 0.3125048 0.4844434 0.3125048 0.4062562 0.5541924 0.4062562 0.4735942 0.4072938 0.3745327 0.4354009 0.3799191 0.4427253 0.3125048 0.4531929 0.3125048 0.3750057 0.5541924 0.3750057 0.4735942 0.3760433 0.3745327 0.4041505 0.3799191 0.4114901 0.3125048 0.4219425 0.3125048 0.3802396 0.3125048 0.3907073 0.3125048 0.1250019 0.2500038 0.1250019 0 0.3750057 0 0.8749981 0.2500038 0.6249943 0 0.8749981 0 0.6249943 1 0.3750057 1 0.6249943 0.7499962 0.3750057 0.7499962 0.6249943 0.7499962 0.3750057 0.7499962 0.6249943 0.4999924 0.3750057 0.4999924 0.3750057 0.4999924 0.3750057 0 0.6249943 0.4999924 0.6249943 0</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_faceline-texcoord-array" count="93" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Root__mt_faceline-vertex">
+          <input semantic="POSITION" source="#Root__mt_faceline-position" />
+        </vertices>
+        <triangles material="mt_faceline" count="80">
+          <input semantic="VERTEX" source="#Root__mt_faceline-vertex" offset="0" />
+          <input semantic="NORMAL" source="#Root__mt_faceline-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#Root__mt_faceline-texcoord" offset="2" set="0" />
+          <p>0 0 0 1 1 1 2 2 2 0 0 0 2 2 2 3 3 3 2 2 2 4 4 4 5 5 5 2 2 2 5 5 5 3 3 3 2 2 2 6 6 6 4 4 4 4 4 4 7 7 7 5 5 5 4 4 4 8 8 8 7 7 7 4 4 4 6 6 6 9 9 9 7 7 7 10 10 10 5 5 5 7 7 7 11 11 11 10 10 10 7 7 7 8 8 8 12 12 12 10 10 10 13 13 13 5 5 5 10 10 10 14 14 14 13 13 13 10 10 10 11 11 11 15 15 15 13 13 13 16 16 16 5 5 5 13 13 13 17 17 17 16 16 16 13 13 13 14 14 14 18 18 18 16 16 16 19 19 19 5 5 5 16 16 16 20 20 20 19 19 19 16 16 16 17 17 17 21 21 21 19 19 19 3 3 3 5 5 5 19 19 19 20 20 20 22 22 22 19 19 19 23 23 23 3 3 3 3 3 3 23 23 23 24 24 24 25 25 25 26 26 26 27 27 27 26 26 26 28 28 28 29 29 29 26 26 26 29 29 29 27 27 27 28 28 28 30 30 30 31 31 31 28 28 28 32 32 32 30 30 30 28 28 28 33 33 33 32 32 32 28 28 28 34 34 34 33 33 33 28 28 28 31 31 31 29 29 29 30 30 30 35 35 35 31 31 31 31 31 31 36 36 36 37 37 37 31 31 31 37 37 37 38 38 38 31 31 31 35 35 35 36 36 36 32 32 32 33 33 33 39 39 39 33 33 33 34 34 34 40 40 40 34 34 34 41 41 41 40 40 40 35 35 35 42 42 42 36 36 36 36 36 36 42 42 42 43 43 43 36 36 36 43 43 43 44 44 44 36 36 36 44 44 44 45 45 45 37 37 37 46 46 46 38 38 38 38 38 38 46 46 46 47 47 47 40 40 40 41 41 41 48 48 48 42 42 42 49 49 49 43 43 43 43 43 43 49 49 49 50 50 50 43 43 43 50 50 50 51 51 51 43 43 43 51 51 51 52 52 52 44 44 44 53 53 53 45 45 45 45 45 45 53 53 53 54 54 54 49 49 49 55 55 55 50 50 50 50 50 50 55 55 55 56 56 56 50 50 50 56 56 56 57 57 57 50 50 50 57 57 57 58 58 58 51 51 51 59 59 59 52 52 52 52 52 52 59 59 59 60 60 60 55 55 55 61 61 61 56 56 56 56 56 56 61 61 61 62 62 62 56 56 56 62 62 62 63 63 63 56 56 56 63 63 63 64 64 64 57 57 57 65 65 65 58 58 58 58 58 58 65 65 65 66 66 66 61 61 61 67 67 67 62 62 62 62 62 62 67 67 67 68 68 68 62 62 62 68 68 68 69 69 69 62 62 62 69 69 69 70 70 70 63 63 63 71 71 71 64 64 64 64 64 64 71 71 71 72 72 72 69 69 69 73 73 73 70 70 70 70 70 70 73 73 73 74 74 74 75 75 75 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 82 82 82 84 84 84 83 83 83 85 85 85 86 86 86 87 87 87 86 86 86 88 88 88 87 87 87 89 89 89 90 90 90 91 91 91 90 90 90 92 92 92 91 91 91 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Root__mt_hair-mesh" name="Root__mt_hair">
+      <mesh>
+        <source id="Root__mt_hair-position">
+          <float_array id="Root__mt_hair-position-array" count="198">2.4375 5.582031 0.5771484 1.600586 6.472656 0.2075195 0.9614258 5.582031 1.985352 1.082031 4.371094 2.296875 2.742188 4.371094 0.7128906 0.6313477 6.472656 1.131836 0.9614258 5.582031 1.985352 -1.212891 4.371094 2.242188 2.796875 4.371094 -1.582031 2.484375 5.582031 -1.460938 2.4375 5.582031 0.5771484 0.6313477 6.472656 1.131836 -1.077148 5.582031 1.9375 -1.077148 5.582031 1.9375 -2.796875 4.371094 0.5820313 1.631836 6.472656 -1.130859 1.600586 6.472656 0.2075195 -0.7075195 6.472656 1.100586 -0.7075195 6.472656 1.100586 -2.484375 5.582031 0.4614258 -2.484375 5.582031 0.4614258 -2.742188 4.371094 -1.712891 -1.631836 6.472656 0.1314697 -1.631836 6.472656 0.1314697 -2.4375 5.582031 -1.577148 -2.4375 5.582031 -1.577148 -1.082031 4.371094 -3.296875 -1.600586 6.472656 -1.207031 -1.600586 6.472656 -1.207031 -0.9614258 5.582031 -2.984375 -0.9614258 5.582031 -2.984375 1.212891 4.371094 -3.242188 -0.6313477 6.472656 -2.130859 -0.6313477 6.472656 -2.130859 1.077148 5.582031 -2.9375 1.077148 5.582031 -2.9375 2.796875 4.371094 -1.582031 0.7075195 6.472656 -2.099609 0.7075195 6.472656 -2.099609 2.484375 5.582031 -1.460938 1.631836 6.472656 -1.130859 1.600586 6.472656 0.2075195 0.4575195 6.796875 -0.2976074 0.6313477 6.472656 1.131836 0 6.796875 -0.5 0.1804199 6.796875 -0.03344727 0.4663086 6.796875 -0.6801758 1.600586 6.472656 0.2075195 0.2021484 6.796875 -0.9575195 -0.1804199 6.796875 -0.9663086 -0.4575195 6.796875 -0.7021484 -0.4663086 6.796875 -0.3193359 -0.2021484 6.796875 -0.04244995 -0.7075195 6.472656 1.100586 0.6313477 6.472656 1.131836 1.631836 6.472656 -1.130859 1.631836 6.472656 -1.130859 0.7075195 6.472656 -2.099609 0.7075195 6.472656 -2.099609 -0.6313477 6.472656 -2.130859 -0.6313477 6.472656 -2.130859 -1.600586 6.472656 -1.207031 -1.600586 6.472656 -1.207031 -1.631836 6.472656 0.1314697 -1.631836 6.472656 0.1314697 -0.7075195 6.472656 1.100586</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_hair-position-array" count="66" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_hair-normal">
+          <float_array id="Root__mt_hair-normal-array" count="198">0.7847358 0.5127202 0.3463796 0.444227 0.8727984 0.1976517 0.3091977 0.5127202 0.8003914 0.3581213 0.1350294 0.9236791 0.9060665 0.1350294 0.4011742 0.1761252 0.8727984 0.4540117 0.3091977 0.5127202 0.8003914 -0.4011742 0.1350294 0.9060665 0.9236791 0.1350294 -0.3581213 0.8003914 0.5127202 -0.3091977 0.7847358 0.5127202 0.3463796 0.1761252 0.8727984 0.4540117 -0.3463796 0.5127202 0.7847358 -0.3463796 0.5127202 0.7847358 -0.9236791 0.1350294 0.3581213 0.4540117 0.8727984 -0.1761252 0.444227 0.8727984 0.1976517 -0.1976517 0.8727984 0.444227 -0.1976517 0.8727984 0.444227 -0.8003914 0.5127202 0.3091977 -0.8003914 0.5127202 0.3091977 -0.9060665 0.1350294 -0.4011742 -0.4540117 0.8727984 0.1761252 -0.4540117 0.8727984 0.1761252 -0.7847358 0.5127202 -0.3463796 -0.7847358 0.5127202 -0.3463796 -0.3581213 0.1350294 -0.9236791 -0.444227 0.8727984 -0.1976517 -0.444227 0.8727984 -0.1976517 -0.3091977 0.5127202 -0.8003914 -0.3091977 0.5127202 -0.8003914 0.4011742 0.1350294 -0.9060665 -0.1761252 0.8727984 -0.4540117 -0.1761252 0.8727984 -0.4540117 0.3463796 0.5127202 -0.7847358 0.3463796 0.5127202 -0.7847358 0.9236791 0.1350294 -0.3581213 0.1976517 0.8727984 -0.444227 0.1976517 0.8727984 -0.444227 0.8003914 0.5127202 -0.3091977 0.4540117 0.8727984 -0.1761252 0.444227 0.8727984 0.1976517 0.1154599 0.9921722 0.05088063 0.1761252 0.8727984 0.4540117 0 1 0 0.04500978 0.9921722 0.1174168 0.1174168 0.9921722 -0.04500978 0.444227 0.8727984 0.1976517 0.05088063 0.9921722 -0.1154599 -0.04500978 0.9921722 -0.1174168 -0.1154599 0.9921722 -0.05088063 -0.1174168 0.9921722 0.04500978 -0.05088063 0.9921722 0.1154599 -0.1976517 0.8727984 0.444227 0.1761252 0.8727984 0.4540117 0.4540117 0.8727984 -0.1761252 0.4540117 0.8727984 -0.1761252 0.1976517 0.8727984 -0.444227 0.1976517 0.8727984 -0.444227 -0.1761252 0.8727984 -0.4540117 -0.1761252 0.8727984 -0.4540117 -0.444227 0.8727984 -0.1976517 -0.444227 0.8727984 -0.1976517 -0.4540117 0.8727984 0.1761252 -0.4540117 0.8727984 0.1761252 -0.1976517 0.8727984 0.444227</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_hair-normal-array" count="66" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_hair-texcoord">
+          <float_array id="Root__mt_hair-texcoord-array" count="132">0.5928741 0.636408 0.5886015 0.6884413 0.5642481 0.6322576 0.5624933 0.5541924 0.5937438 0.5541924 0.5741817 0.6884413 0.5616236 0.636408 0.5312428 0.5541924 0.6249943 0.5541924 0.6241245 0.636408 0.5954986 0.6322576 0.5573511 0.6884413 0.5329976 0.6322576 0.5303731 0.636408 0.5000076 0.5541924 0.619852 0.6884413 0.6054322 0.6884413 0.5429313 0.6884413 0.5261006 0.6884413 0.5017471 0.6322576 0.4991226 0.636408 0.4687572 0.5541924 0.5116808 0.6884413 0.4948501 0.6884413 0.4704967 0.6322576 0.4678721 0.636408 0.4375067 0.5541924 0.4804303 0.6884413 0.4635996 0.6884413 0.4392462 0.6322576 0.4366217 0.636408 0.4062562 0.5541924 0.4491798 0.6884413 0.4323491 0.6884413 0.4079957 0.6322576 0.4053712 0.636408 0.3750057 0.5541924 0.4179294 0.6884413 0.4010986 0.6884413 0.3767453 0.6322576 0.3866789 0.6884413 0.5998474 0.839765 0.5260548 0.8385443 0.5729763 0.7735561 0.5000076 0.8375067 0.5184253 0.8201114 0.5184253 0.856962 0.5996796 0.8450751 0.5000076 0.8645914 0.4815747 0.856962 0.4739452 0.8385443 0.4815747 0.8201114 0.5000076 0.8124819 0.5035325 0.7418631 0.5693446 0.7696803 0.5718471 0.910872 0.5693446 0.9133745 0.5017624 0.9413596 0.4964675 0.9412223 0.4306554 0.9133745 0.4270237 0.9095293 0.4001526 0.8432899 0.4003204 0.8380102 0.4281529 0.7721676 0.4320134 0.7685664 0.4982376 0.74168</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_hair-texcoord-array" count="66" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Root__mt_hair-vertex">
+          <input semantic="POSITION" source="#Root__mt_hair-position" />
+        </vertices>
+        <triangles material="mt_hair" count="56">
+          <input semantic="VERTEX" source="#Root__mt_hair-vertex" offset="0" />
+          <input semantic="NORMAL" source="#Root__mt_hair-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#Root__mt_hair-texcoord" offset="2" set="0" />
+          <p>0 0 0 1 1 1 2 2 2 0 0 0 2 2 2 3 3 3 0 0 0 3 3 3 4 4 4 1 1 1 5 5 5 2 2 2 3 3 3 6 6 6 7 7 7 4 4 4 8 8 8 9 9 9 4 4 4 9 9 9 10 10 10 6 6 6 11 11 11 12 12 12 6 6 6 12 12 12 7 7 7 7 7 7 13 13 13 14 14 14 9 9 9 15 15 15 10 10 10 10 10 10 15 15 15 16 16 16 11 11 11 17 17 17 12 12 12 13 13 13 18 18 18 19 19 19 13 13 13 19 19 19 14 14 14 14 14 14 20 20 20 21 21 21 18 18 18 22 22 22 19 19 19 20 20 20 23 23 23 24 24 24 20 20 20 24 24 24 21 21 21 21 21 21 25 25 25 26 26 26 23 23 23 27 27 27 24 24 24 25 25 25 28 28 28 29 29 29 25 25 25 29 29 29 26 26 26 26 26 26 30 30 30 31 31 31 28 28 28 32 32 32 29 29 29 30 30 30 33 33 33 34 34 34 30 30 30 34 34 34 31 31 31 31 31 31 35 35 35 36 36 36 33 33 33 37 37 37 34 34 34 35 35 35 38 38 38 39 39 39 35 35 35 39 39 39 36 36 36 38 38 38 40 40 40 39 39 39 41 41 41 42 42 42 43 43 43 42 42 42 44 44 44 45 45 45 42 42 42 46 46 46 44 44 44 42 42 42 47 47 47 46 46 46 42 42 42 45 45 45 43 43 43 44 44 44 46 46 46 48 48 48 44 44 44 48 48 48 49 49 49 44 44 44 49 49 49 50 50 50 44 44 44 50 50 50 51 51 51 44 44 44 51 51 51 52 52 52 44 44 44 52 52 52 45 45 45 45 45 45 52 52 52 53 53 53 45 45 45 53 53 53 54 54 54 46 46 46 47 47 47 55 55 55 46 46 46 56 56 56 48 48 48 48 48 48 56 56 56 57 57 57 48 48 48 58 58 58 49 49 49 49 49 49 58 58 58 59 59 59 49 49 49 60 60 60 50 50 50 50 50 50 60 60 60 61 61 61 50 50 50 62 62 62 51 51 51 51 51 51 62 62 62 63 63 63 51 51 51 64 64 64 52 52 52 52 52 52 64 64 64 65 65 65 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Root__mt_mask-mesh" name="Root__mt_mask">
+      <mesh>
+        <source id="Root__mt_mask-position">
+          <float_array id="Root__mt_mask-position-array" count="12">-0.5 3.5 0.5 0.5 3.5 0.5 -0.5 3.5 -0.5 0.5 3.5 -0.5</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_mask-position-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_mask-normal">
+          <float_array id="Root__mt_mask-normal-array" count="12">0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_mask-normal-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_mask-texcoord">
+          <float_array id="Root__mt_mask-texcoord-array" count="8">0 0 1 0 0 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_mask-texcoord-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Root__mt_mask-vertex">
+          <input semantic="POSITION" source="#Root__mt_mask-position" />
+        </vertices>
+        <triangles material="mt_mask" count="2">
+          <input semantic="VERTEX" source="#Root__mt_mask-vertex" offset="0" />
+          <input semantic="NORMAL" source="#Root__mt_mask-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#Root__mt_mask-texcoord" offset="2" set="0" />
+          <p>0 0 0 1 1 1 2 2 2 1 1 1 3 3 3 2 2 2 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="Armature_Root__mt_faceline-mesh">
+      <skin source="#Root__mt_faceline-mesh">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="Root__mt_faceline-mesh-joint">
+          <Name_array id="Root__mt_faceline-mesh-joint-array" count="1">Root</Name_array>
+          <technique_common>
+            <accessor source="#Root__mt_faceline-mesh-joint-array" count="1" stride="1">
+              <param name="JOINT" type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_faceline-mesh-inv_bind_matrix">
+          <float_array id="Root__mt_faceline-mesh-inv_bind_matrix-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_faceline-mesh-inv_bind_matrix-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_faceline-mesh-weight">
+          <float_array id="Root__mt_faceline-mesh-weight-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_faceline-mesh-weight-array" count="1" stride="1">
+              <param name="WEIGHT" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Root__mt_faceline-mesh-joint" />
+          <input semantic="INV_BIND_MATRIX" source="#Root__mt_faceline-mesh-inv_bind_matrix" />
+        </joints>
+        <vertex_weights count="93">
+          <input semantic="JOINT" source="#Root__mt_faceline-mesh-joint" offset="0" />
+          <input semantic="WEIGHT" source="#Root__mt_faceline-mesh-weight" offset="1" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="Armature_Root__mt_hair-mesh">
+      <skin source="#Root__mt_hair-mesh">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="Root__mt_hair-mesh-joint">
+          <Name_array id="Root__mt_hair-mesh-joint-array" count="1">Root</Name_array>
+          <technique_common>
+            <accessor source="#Root__mt_hair-mesh-joint-array" count="1" stride="1">
+              <param name="JOINT" type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_hair-mesh-inv_bind_matrix">
+          <float_array id="Root__mt_hair-mesh-inv_bind_matrix-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_hair-mesh-inv_bind_matrix-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_hair-mesh-weight">
+          <float_array id="Root__mt_hair-mesh-weight-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_hair-mesh-weight-array" count="1" stride="1">
+              <param name="WEIGHT" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Root__mt_hair-mesh-joint" />
+          <input semantic="INV_BIND_MATRIX" source="#Root__mt_hair-mesh-inv_bind_matrix" />
+        </joints>
+        <vertex_weights count="66">
+          <input semantic="JOINT" source="#Root__mt_hair-mesh-joint" offset="0" />
+          <input semantic="WEIGHT" source="#Root__mt_hair-mesh-weight" offset="1" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="Armature_Root__mt_mask-mesh">
+      <skin source="#Root__mt_mask-mesh">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="Root__mt_mask-mesh-joint">
+          <Name_array id="Root__mt_mask-mesh-joint-array" count="1">Root</Name_array>
+          <technique_common>
+            <accessor source="#Root__mt_mask-mesh-joint-array" count="1" stride="1">
+              <param name="JOINT" type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_mask-mesh-inv_bind_matrix">
+          <float_array id="Root__mt_mask-mesh-inv_bind_matrix-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_mask-mesh-inv_bind_matrix-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Root__mt_mask-mesh-weight">
+          <float_array id="Root__mt_mask-mesh-weight-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#Root__mt_mask-mesh-weight-array" count="1" stride="1">
+              <param name="WEIGHT" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Root__mt_mask-mesh-joint" />
+          <input semantic="INV_BIND_MATRIX" source="#Root__mt_mask-mesh-inv_bind_matrix" />
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#Root__mt_mask-mesh-joint" offset="0" />
+          <input semantic="WEIGHT" source="#Root__mt_mask-mesh-weight" offset="1" />
+          <vcount>1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Armature" name="Armature" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="Armature_Root" name="Root" sid="Root" type="JOINT">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="Armature_set_beard" name="set_beard" sid="set_beard" type="JOINT">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          </node>
+          <node id="Armature_set_front" name="set_front" sid="set_front" type="JOINT">
+            <matrix sid="transform">1 0 0 0 0 0.939693 -0.3420191 6.71959 0 0.3420191 0.939693 1.34942 0 0 0 1</matrix>
+          </node>
+          <node id="Armature_set_hair" name="set_hair" sid="set_hair" type="JOINT">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          </node>
+          <node id="Armature_set_nose" name="set_nose" sid="set_nose" type="JOINT">
+            <matrix sid="transform">1 0 0 0 0 1 0 2.45 0 0 1 2.6 0 0 0 1</matrix>
+          </node>
+          <node id="Armature_set_side" name="set_side" sid="set_side" type="JOINT">
+            <matrix sid="transform">0.7071067 -0.7071069 0 -2.10639 0.7071069 0.7071067 0 5.9581 0 0 1 0.0189996 0 0 0 1</matrix>
+          </node>
+          <node id="Armature_set_top" name="set_top" sid="set_top" type="JOINT">
+            <matrix sid="transform">1 0 0 0 0 0.9063078 0.4226183 6.69253 0 -0.4226183 0.9063078 -1.50148 0 0 0 1</matrix>
+          </node>
+        </node>
+      </node>
+      <node id="Root__mt_faceline" name="Root__mt_faceline" type="NODE">
+        <instance_controller url="#Armature_Root__mt_faceline-mesh">
+          <skeleton>#Armature_Root</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mt_faceline" target="#mt_faceline" />
+              <bind_vertex_input semantic="CHANNEL0" input_semantic="TEXCOORD" input_set="0" />
+              <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1" />
+              <bind_vertex_input semantic="CHANNEL2" input_semantic="TEXCOORD" input_set="2" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+      <node id="Root__mt_hair" name="Root__mt_hair" type="NODE">
+        <instance_controller url="#Armature_Root__mt_hair-mesh">
+          <skeleton>#Armature_Root</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mt_hair" target="#mt_hair" />
+              <bind_vertex_input semantic="CHANNEL0" input_semantic="TEXCOORD" input_set="0" />
+              <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1" />
+              <bind_vertex_input semantic="CHANNEL2" input_semantic="TEXCOORD" input_set="2" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+      <node id="Root__mt_mask" name="Root__mt_mask" type="NODE">
+        <instance_controller url="#Armature_Root__mt_mask-mesh">
+          <skeleton>#Armature_Root</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="mt_mask" target="#mt_mask" />
+              <bind_vertex_input semantic="CHANNEL0" input_semantic="TEXCOORD" input_set="0" />
+              <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1" />
+              <bind_vertex_input semantic="CHANNEL2" input_semantic="TEXCOORD" input_set="2" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene" />
+  </scene>
+</COLLADA>
