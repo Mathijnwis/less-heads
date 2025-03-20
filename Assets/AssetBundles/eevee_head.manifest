@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 1972540362
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c0a7ce078f7bc16258cabab28993aef2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 140175ca4e0afea957291a00d865c06a
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c0a7ce078f7bc16258cabab28993aef2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/prefebs/head prefebs/eevee.prefab
+Dependencies: []

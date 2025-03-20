@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 1209038756
+CRC: 1360828698
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: zaciansword_body
+      Name: eevee_head
+      Dependencies: {}
+    Info_1:
+      Name: mimikyu_head
       Dependencies: {}
