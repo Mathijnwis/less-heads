@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 2824113063
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: deoxys_body
+      Dependencies: {}
+    Info_1:
+      Name: giratina_world
+      Dependencies: {}
+    Info_2:
+      Name: arceus_world
+      Dependencies: {}
+    Info_3:
+      Name: reshiram_world
+      Dependencies: {}
+    Info_4:
+      Name: magnemite_world
+      Dependencies: {}
+    Info_5:
+      Name: squirtle_body
+      Dependencies: {}
+    Info_6:
+      Name: drifblim_world
+      Dependencies: {}
