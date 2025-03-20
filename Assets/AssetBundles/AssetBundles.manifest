@@ -1,10 +1,7 @@
 ManifestFileVersion: 0
-CRC: 1360828698
+CRC: 2115868550
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: eevee_head
-      Dependencies: {}
-    Info_1:
-      Name: mimikyu_head
+      Name: tiara_world
       Dependencies: {}
