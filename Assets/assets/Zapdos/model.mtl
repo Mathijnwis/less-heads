@@ -1,0 +1,35 @@
+newmtl model_BodyB
+ illum 2
+ Ka 1 1 1
+ Kd 0.8 0.8 0.8
+ Ks 0.2980392 0.2980392 0.2980392
+ Ns 20
+ d 1
+ Tr 0
+ map_Kd Thunder_BodyCl_ctr.png
+newmtl model_BodyC
+ illum 2
+ Ka 1 1 1
+ Kd 0.8 0.8 0.8
+ Ks 0.2980392 0.2980392 0.2980392
+ Ns 20
+ d 1
+ Tr 0
+ map_Kd Thunder_BodyCl_ctr.png
+newmtl model_Eye
+ illum 2
+ Ka 1 1 1
+ Kd 0.8 0.8 0.8
+ Ks 0.2980392 0.2980392 0.2980392
+ Ns 20
+ d 1
+ Tr 0
+ map_Kd Thunder_EyeCl_ctr.png
+newmtl shadow_w
+ illum 2
+ Ka 0 0 0
+ Kd 0 0 0
+ Ks 0 0 0
+ Ns 20
+ d 1
+ Tr 0
