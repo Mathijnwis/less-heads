@@ -1016,6 +1016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lickilicky
       objectReference: {fileID: 0}
+    - target: {fileID: 3437922414380734310, guid: ed82eb174a97d444ea5cf4af7ccb2e37, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9141468376082993079, guid: ed82eb174a97d444ea5cf4af7ccb2e37, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
