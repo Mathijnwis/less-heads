@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 692775091
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4c599ec322fd33ba9fe984d59f76672f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 083f8b787e2cf272dc0f2aaa2adb93bf
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4c599ec322fd33ba9fe984d59f76672f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/prefebs/head prefebs/slowpoke.prefab
+Dependencies: []

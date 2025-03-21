@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 3883517489
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7166243bd5fd90f3f87860cf5f23a8c6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 045213c52eecc7aeba131c62b418c535
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7166243bd5fd90f3f87860cf5f23a8c6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/prefebs/head prefebs/crown.prefab
+Dependencies: []
