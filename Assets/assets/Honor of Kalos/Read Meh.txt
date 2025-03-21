@@ -1,0 +1,1 @@
+If you're using blender and want the vertex colors use the New Export FBX.
